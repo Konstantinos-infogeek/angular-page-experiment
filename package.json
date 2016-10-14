@@ -4,7 +4,8 @@
   "description": "Some angularjs experiment",
   "main": "index.html",
   "scripts": {
-    "server": "browser-sync start --server --directory --files **/* --startPath=index.html"
+    "server": "browser-sync start --server --directory --files **/* --startPath=index.html",
+    "serverWithConfig": "browser-sync start --config=bs-config.js"
   },
   "repository": {
     "type": "git",

@@ -14,3 +14,11 @@ gulp.task('default', function(){
 	    'node_modules/angular/*.css'
     ]).pipe( gulp.dest('libs/angular') );
 });
+
+gulp.task('module1', function(){
+    //gulp.src();
+});
+
+gulp.task('watch1', function () {
+	gulp.watch('module1/**/*', ['module1']);
+});

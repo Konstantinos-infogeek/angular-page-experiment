@@ -1,0 +1,29 @@
+{
+  "name": "angular-page-experiment",
+  "version": "1.0.0",
+  "description": "Some angularjs experiment",
+  "main": "index.html",
+  "scripts": {
+    "server": "browser-sync start --server --directory --files **/* --startPath=index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Konstantinos-infogeek/angular-page-experiment.git"
+  },
+  "keywords": [
+    "angular",
+    "experiment"
+  ],
+  "author": "Kontantinos Tsatsarounos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Konstantinos-infogeek/angular-page-experiment/issues"
+  },
+  "homepage": "https://github.com/Konstantinos-infogeek/angular-page-experiment#readme",
+  "dependencies": {
+    "angular": "^1.5.8"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.3"
+  }
+}

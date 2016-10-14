@@ -1,2 +1,3 @@
-# angular-page-experiment
+# Angular Page Experiment
+
 Test my skills in angular and github website generator.

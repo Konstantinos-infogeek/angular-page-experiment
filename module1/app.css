@@ -1,0 +1,25 @@
+.wrapper-container {
+    display: block;
+    overflow:hidden;
+}
+.wrapper.ng-enter, .wrapper.ng-leave {
+    transition: opacity cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms;
+}
+
+.wrapper {
+
+}
+
+.wrapper.ng-enter {
+    opacity: 0;
+}
+.wrapper.ng-leave {
+    opacity: 1;
+}
+
+.wrapper.ng-enter.ng-enter-active {
+    opacity: 0;
+}
+.wrapper.ng-leave.ng-leave-active {
+    opacity: 0;
+}

@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="module1">
 <head>
 	<meta charset="UTF-8">
 	<title>Module 1</title>
 	
-	<style>
-		html { font-family: sans-serif; }
+	<link rel="stylesheet" type="text/css" href="../libs/angular/angular-csp.css" media="all">
+	<link rel="stylesheet" type="text/css" href="app.css" media="all">
+	
+	<style media="screen and (min-width: 720px)">
+		html {
+			font-family: sans-serif;
+		}
+		
+		h1 {
+			font-size: 40px;
+		}
 	</style>
 </head>
-<body>
-	<header>
-		<h1>Module 1</h1>
-	</header>
+<body ng-cloak>
+<header>
+	<h1>Angular Module 1</h1>
+	<nav>
+		<ul>
+			<li><a href="#/">Home</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div class="wrapper" ng-view>
+	
+	
+</div>
+
+<script src="../libs/angular/angular.min.js"></script>
+<script src="../libs/angular/angular-animate.min.js"></script>
+<script src="../libs/angular/angular-route.min.js"></script>
+<script src="app/app.js"></script>
 </body>
 </html>

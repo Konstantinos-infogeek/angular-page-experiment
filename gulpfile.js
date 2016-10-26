@@ -11,7 +11,9 @@ var gulp = require('gulp');
 gulp.task('default', function(){
     gulp.src([
 	    'node_modules/angular/*.js',
-	    'node_modules/angular/*.css'
+	    'node_modules/angular/*.css',
+	    'node_modules/angular-route/*.js',
+	    'node_modules/angular-animate/*.js'
     ]).pipe( gulp.dest('libs/angular') );
 });
 

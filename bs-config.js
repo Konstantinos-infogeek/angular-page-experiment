@@ -19,7 +19,9 @@ module.exports = {
 		}
 	},
 	"files": [
-		'./**/*'
+		'./**/*.html',
+		'./**/*.js',
+		'./**/*.css'
 	],
 	"watchOptions": {},
 	"server": {

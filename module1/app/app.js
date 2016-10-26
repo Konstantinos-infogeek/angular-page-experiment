@@ -9,8 +9,9 @@
 
 	angular.module ('module1', [ 'ngRoute', 'ngAnimate' ])
 		.config ([ "$routeProvider", function (router) {
-			var path = window.location.pathname.split('/').reverse().slice(1).reverse().join('/');
-			console.log(path);
+			var path = window.location.pathname.split('/')
+				.reverse().slice(1).reverse().join('/');
+
 			router
 				.when ('/', {
 					templateUrl:  path + '/views/home.html'

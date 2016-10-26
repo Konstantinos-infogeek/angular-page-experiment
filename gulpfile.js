@@ -13,8 +13,13 @@ gulp.task('default', function(){
 	    'node_modules/angular/*.js',
 	    'node_modules/angular/*.css',
 	    'node_modules/angular-route/*.js',
-	    'node_modules/angular-animate/*.js'
+	    'node_modules/angular-animate/*.js',
+	    'node_modules/jquery/dist/jquery.min.js'
     ]).pipe( gulp.dest('libs/angular') );
+
+	gulp.src([
+		'node_modules/jquery/dist/jquery.min.js'
+	]).pipe( gulp.dest('libs') );
 });
 
 gulp.task('module1', function(){

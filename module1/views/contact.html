@@ -1,13 +1,22 @@
-<form>
-	<fieldset>
-		<label>Email</label>
-		<input type="text" name="email" placeholder="Email">
-	</fieldset>
+<form class="uk-form">
 	
-	<fieldset>
-		<label>Message</label>
-		<textarea>
-			
-		</textarea>
+	<fieldset data-uk-margin>
+		<legend>Contact</legend>
+		
+		<div class="uk-grid">
+			<div class="uk-width-1-1">
+				<label class="uk-form-label">Email</label>
+				<input type="text" class="uk-width-1-1" name="email" placeholder="Email">
+			</div>
+		</div>
+		
+		<div class="uk-grid">
+			<div class="uk-width-1-1">
+				<label class="uk-form-label">Message</label>
+				<textarea cols="10" rows="15" class="uk-width-1-1"></textarea>
+			</div>
+		</div>
+		
 	</fieldset>
+
 </form>

@@ -5,35 +5,38 @@
 	<title>Module 1</title>
 	
 	<link rel="stylesheet" type="text/css" href="../libs/angular/angular-csp.css" media="all">
+	<link rel="stylesheet" type="text/css" href="ui/css/uikit.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="ui/css/uikit.gradient.min.css" media="all">
 	<link rel="stylesheet" type="text/css" href="app.css" media="all">
-	
-	<style media="screen and (min-width: 720px)">
-		html {
-			font-family: sans-serif;
-		}
-		
-		h1 {
-			font-size: 40px;
-		}
-	</style>
 </head>
 <body ng-cloak>
 <header>
-	<h1>Angular Module 1</h1>
-	<nav>
-		<ul>
-			<li><a href="#/">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#contact">Contact</a></li>
+	<nav class="uk-navbar uk-margin-large-bottom">
+		<a class="uk-navbar-brand uk-hidden-small" href="/">Module One</a>
+		<ul class="uk-navbar-nav uk-hidden-small">
+			<li>
+				<a href="#/">Home</a>
+			</li>
+			<li>
+				<a href="#about">About</a>
+			</li>
+			<li>
+				<a href="#contact">Contact</a>
+			</li>
 		</ul>
+		<a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+		<div class="uk-navbar-brand uk-navbar-center uk-visible-small">Brand</div>
 	</nav>
 </header>
 
-<div class="wrapper" ng-view>
-	
-	
+<div class="wrapper uk-container uk-container-center" ng-view>
+
+
 </div>
 
+
+<script src="../libs/jquery.min.js"></script>
+<script src="ui/js/uikit.min.js"></script>
 <script src="../libs/angular/angular.min.js"></script>
 <script src="../libs/angular/angular-animate.min.js"></script>
 <script src="../libs/angular/angular-route.min.js"></script>

@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "server": "browser-sync start --server --directory --files **/* --startPath=index.html",
-    "serverWithConfig": "browser-sync start --config=bs-config.js"
+    "serverWithConfig": "browser-sync start --config=bs-config.js",
+    "httpServer": "http-server -a localhost -p 3000"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.17.3",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "http-server": "^0.9.0"
   }
 }
